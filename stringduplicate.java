@@ -20,24 +20,24 @@ public class stringduplicate {
         System.out.println(dup.add("medi"));
         System.out.println(dup.add("ishu"));*/
        //find string duplicates from given array
-       for(String s:arr){
-         System.out.println(dup.add(s));
-       }
+    //    for(String s:arr){
+    //      System.out.println(dup.add(s));
+    //    }
 
 
 
        
-        boolean status = false; // <-- Move this here
+        boolean status = false; 
 
-        // for (int i = 0; i < arr.length; i++) {
-        //     if (dup.add(arr[i]) == false) {
-        //         System.out.println("duplicate string is:" + arr[i]);
-        //         status = true;
-        //     }
-        // }
-        // if (status == false) {
-        //     System.out.println("no duplicate string");
-        // }
+        for (int i = 0; i < arr.length; i++) {
+            if (dup.add(arr[i]) == false) {
+                System.out.println("duplicate string is:" + arr[i]);
+                status = true;
+            }
+        }
+        if (status == false) {
+            System.out.println("no duplicate string");
+        }
     }
 }
 
